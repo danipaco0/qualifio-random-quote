@@ -1,6 +1,8 @@
 import express from "express";
+import { getQuote } from "../controllers/quote.controller";
 
 const router = express.Router();
 
-router.route("/random")
-    .get()
+router.get("/random", getQuote);
+
+export default router;
