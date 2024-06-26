@@ -8,8 +8,8 @@ From the project's root folder, run the following commands :
 
 ### `npm start`
 
-Runs both back-end and front-end.
-
+Runs both back-end and front-end. Automatically opens http://localhost:3000 to view it in browser.
+ 
 ### `npm test`
 
 Launches the back-end tests using Jest.
