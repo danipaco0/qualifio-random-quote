@@ -8,7 +8,6 @@ export const getQuote = async (req: Request, res: Response): Promise<void> => {
     const response = await axios.get(API_URL);
     res.status(200).json(response.data);
   } catch (error) {
-    console.error('Error fetching quotes:', error);
-    res.status(500).json({ message: 'Error fetching quotes', error });
+    res.status(500).json({ message: 'Error fetching quote', error });
   }
 };
